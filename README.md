@@ -1,1 +1,1 @@
-# hiwin_2022_billiard_task
+# billiard task in hiwin competition
