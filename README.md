@@ -1,14 +1,30 @@
 ## Billiard Task in HIWIN Competition
 
-### 上銀撞球指令
-確認USB號碼：		ls /dev /tty*
-連線USB：		sudo chmod 777 /dev/ttyUSB0 （最後一位數字根據上面確認之號碼）
-進入工作資料夾：	cd /home/使用者名稱/hiwin_BilliardBall/src/libmodbus_ROS/src/My_test
-執行校正程式：		python3 Correction_ball.py (執行後在教導器輸入新Z軸數值)
-執行比賽程式：		python3 Hiwin_API_FianlVer.4.py
+### Getting start
+
+#### Clone this Repository
+```
+cd <your_workspace>/src
+git clone --recurse-submodules https://github.com/tku-iarc/hiwin_billiard_task.git
+```
+
+### Some commands
+
+```
+# 確認USB號碼:
+ls /dev /tty*
+# 連線USB：		
+sudo chmod 777 /dev/ttyUSB0 （最後一位數字根據上面確認之號碼）
+# 進入工作資料夾：	
+cd /home/使用者名稱/hiwin_BilliardBall/src/libmodbus_ROS/src/My_test
+# 執行校正程式：		
+python3 Correction_ball.py (執行後在教導器輸入新Z軸數值)
+# 執行比賽程式：		
+python3 Hiwin_API_FianlVer.4.py
+```
 
 
-### 簡述
+### Description
 
 Hiwin_API_example.py：
 	這份為學長給的手臂控制範例程式
